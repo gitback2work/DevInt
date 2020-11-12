@@ -8,7 +8,7 @@ using System.Security.Cryptography.X509Certificates;
 namespace DevInt.Core.Calculators
 {
     // Assume all numbers in input string are integers as there is no instruction
-    //on how to convert to int32 result
+    //on how to convert to int32 resultCom[leted exercise
     public class StringCalculator
     {
         public StringCalculator()
