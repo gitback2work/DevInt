@@ -7,8 +7,21 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace DevInt.Core.Calculators
 {
-    // Assume all numbers in input string are integers as there is no instruction
-    //on how to convert to int32 resultCom[leted exercise
+    // Assume all numbers in input string are integers as there is no instruction otherwise
+    //
+    // Favouring readability, so no attenpt was made to obfuscate by removing whitespace
+    //
+    // Expectation is that evolution of code is important and so there are 7 separate Add() functions, each created
+    // incrementally to address the next goal presented, one task at a time. They are called C1Add(), C2Add() etc
+    // The final method C7Add() has all functionality and would in practice be just called Add()
+    //
+    // Adherence to exact specs also deemed inportant. So, for example, the first version
+    // will not work for inputs with more than 2 numbers, as per the specifications.
+    // 
+    // Each of the tests builds on the last and is meant to be inclusive and complete
+    // But parts could be separated out as preferred
+    //
+
     public class StringCalculator
     {
         public StringCalculator()
